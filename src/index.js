@@ -12,20 +12,6 @@ class LoginForm extends React.Component {
       // To show error message in login failed
       console.log("error occurred");
     });
-    //load the helper script
-    const script = document.createElement("script");
-    script.id = "pinc.helper";
-    script.src = "https://labs.pathfix.com/helper.js";
-    script.setAttribute("modules", "pinc.auth.min");
-    script.setAttribute(
-      "data-client-id",
-      "3685AD5D-C8A0-4734-837F-822341D2D03C"
-    );
-    script.setAttribute(
-      "data-client-providers",
-      "msazuread,discord,fb,github,google,linkedin,ms,spotify,twitter"
-    );
-    document.body.appendChild(script);
   }
   loggedIn = () => {
     window.location.replace(
@@ -41,3 +27,4 @@ class LoginForm extends React.Component {
   }
 }
 ReactDOM.render(<LoginForm />, document.getElementById("container"));
+
