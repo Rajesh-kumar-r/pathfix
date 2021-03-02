@@ -15,7 +15,7 @@ class LoginForm extends React.Component {
   }
   loggedIn = () => {
     window.location.replace(
-      `https://labs.pathfix.com/integrate/command?provider=fbidentity&public_key=3685AD5D-C8A0-4734-837F-822341D2D03C&consented_redirect=${window.location.href}?isSocial=true&consented_action=redirect`
+      `https://labs.pathfix.com/integrate/command?provider=fbidentity&public_key=3685AD5D-C8A0-4734-837F-822341D2D03C&consented_redirect=${window.location.href}&consented_action=redirect`
     );
   };
   render() {
