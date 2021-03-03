@@ -12,6 +12,7 @@ class LoginForm extends React.Component {
   componentDidMount() {
     window.addEventListener("$pinc.ui.auth.loggedin", () => {
       // To show user details on success
+      console.log('here');
       this.setState({ profile: JSON.stringify(window.$pinc.auth.profile) });
       console.log("ready", window.$pinc.auth.profile);
     });
@@ -34,11 +35,11 @@ class LoginForm extends React.Component {
     return (
       <Space>
         <Button onClick={this.loggedIn} type="primary">
-          Login
+          Facebook
         </Button>
-        <Button onClick={this.loggedInGoogle} type="primary">
-          google
-        </Button>
+        {/* <Button onClick={this.loggedInGoogle} type="primary">
+          Google
+        </Button> */}
         {this.state.profile}
       </Space>
     );
