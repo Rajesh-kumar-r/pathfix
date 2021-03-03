@@ -37,9 +37,9 @@ class LoginForm extends React.Component {
         <Button onClick={this.loggedIn} type="primary">
           Facebook
         </Button>
-        {/* <Button onClick={this.loggedInGoogle} type="primary">
+        <Button onClick={this.loggedInGoogle} type="primary">
           Google
-        </Button> */}
+        </Button>
         {this.state.profile}
       </Space>
     );
