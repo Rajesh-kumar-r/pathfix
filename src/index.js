@@ -6,7 +6,7 @@ class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      profile: "once login profile will be here"
+      profile: "once login profile will be here face book woun't work"
     };
   }
   componentDidMount() {
@@ -28,7 +28,7 @@ class LoginForm extends React.Component {
   };
   loggedInGoogle = () => {
     window.location.replace(
-      `https://labs.pathfix.com/integrate/command?provider=googleidentity&public_key=B318DA15-B885-4622-9380-42F19B2C7E68&consented_redirect=${window.location.href}&consented_action=redirect`
+      `https://labs.pathfix.com/integrate/command?provider=googleidentity&public_key=38164D09-3323-4958-8772-D31C247231AE&consented_redirect=${window.location.href}&consented_action=redirect`
     );
   };
   render() {
