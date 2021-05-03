@@ -23,12 +23,17 @@ class LoginForm extends React.Component {
   }
   loggedIn = () => {
     window.location.replace(
-      `https://labs.pathfix.com/integrate/command?provider=fbidentity&public_key=3685AD5D-C8A0-4734-837F-822341D2D03C&consented_redirect=${window.location.href}&consented_action=redirect`
+      `https://labs.pathfix.com/integrate/command?provider=fbidentity&public_key=F9B50824-EA2D-4209-85FD-EF8F30C6B37F&consented_redirect=${window.location.href}&consented_action=redirect`
     );
   };
   loggedInGoogle = () => {
     window.location.replace(
-      `https://labs.pathfix.com/integrate/command?provider=googleidentity&public_key=38164D09-3323-4958-8772-D31C247231AE&consented_redirect=${window.location.href}&consented_action=redirect`
+      `https://labs.pathfix.com/integrate/command?provider=googleidentity&public_key=F9B50824-EA2D-4209-85FD-EF8F30C6B37F&consented_redirect=${window.location.href}&consented_action=redirect`
+    );
+  };
+  loggedInApple = () => {
+    window.location.replace(
+      `https://labs.pathfix.com/integrate/command?provider=appleidentity&public_key=F9B50824-EA2D-4209-85FD-EF8F30C6B37F&consented_redirect=${window.location.href}&consented_action=redirect`
     );
   };
   render() {
@@ -38,6 +43,9 @@ class LoginForm extends React.Component {
           Facebook
         </Button>
         <Button onClick={this.loggedInGoogle} type="primary">
+          Google
+        </Button>
+        <Button onClick={this.loggedInApple} type="primary">
           Google
         </Button>
         {this.state.profile}
