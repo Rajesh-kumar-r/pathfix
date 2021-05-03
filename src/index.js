@@ -46,7 +46,7 @@ class LoginForm extends React.Component {
           Google
         </Button>
         <Button onClick={this.loggedInApple} type="primary">
-          Google
+          Apple
         </Button>
         {this.state.profile}
       </Space>
